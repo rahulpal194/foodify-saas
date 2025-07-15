@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme{
+    --font-plus: Plus Jakarta Sans, sans-serif;
+    --color-primary : rgba(255, 66, 0, 1);
+    --color-secondary : #FF9341;
+    --color-paragraph : #5B5C6A;
+    --shadow-gradient : 0px 8px 24px 0px rgba(255, 106, 32, 0.24);
+    --shadow-card : 0px 6px 48px 0px rgba(87, 89, 102, 0.04);
+}
+@layer base{
+    body {@apply font-plus}
+    button{ @apply cursor-pointer}
+    .dropdown-group {@apply relative}
+    .swiper-slide{@apply !w-fit}
+}
+@layer utilities{
+    .container{ @apply max-w-[1118px] w-full mx-auto px-4}
+
+        /* .active {
+            border-width: 1px;
+            border-radius: 50em;
+            border-style: solid;
+            border-image: linear-gradient(to bottom right, rgba(255, 66, 0, 1), #FF9341) 1;
+            background: rgb(177, 169, 169);
+        } */
+}
