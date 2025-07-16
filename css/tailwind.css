@@ -7,10 +7,13 @@
     --color-paragraph : #5B5C6A;
     --shadow-gradient : 0px 8px 24px 0px rgba(255, 106, 32, 0.24);
     --shadow-card : 0px 6px 48px 0px rgba(87, 89, 102, 0.04);
+    --shadow-form : 0px 8px 40px 0px rgba(23, 31, 70, 0.08);
+    --shadow-grad-btn : 0px 8px 16px 0px rgba(255, 105, 31, 0.32);
 }
 @layer base{
     body {@apply font-plus}
     button{ @apply cursor-pointer}
+    input{@apply outline-none}
     .dropdown-group {@apply relative}
     .swiper-slide{@apply !w-fit}
 }
