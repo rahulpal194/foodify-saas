@@ -7,8 +7,8 @@
   font-family: "Iconly";
   font-style: normal;
   font-weight: 400;
-  src: url("./iconly.eot?1752656186608");
-  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1752656186608") format("woff2"), url("./iconly.woff?1752656186608") format("woff"), url("./iconly.ttf?1752656186608") format("truetype"), url("./iconly.svg?1752656186608#Iconly") format("svg");
+  src: url("./iconly.eot?1752742641094");
+  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1752742641094") format("woff2"), url("./iconly.woff?1752742641094") format("woff"), url("./iconly.ttf?1752742641094") format("truetype"), url("./iconly.svg?1752742641094#Iconly") format("svg");
 }
 
 [class="icon"], [class^="icon-"], [class*=" icon-"] {
@@ -109,4 +109,16 @@
 
 .icon-minus-circle:before {
   content: "\e015";
+}
+
+.icon-calendar:before {
+  content: "\e016";
+}
+
+.icon-hourglass-line:before {
+  content: "\e017";
+}
+
+.icon-check-circle:before {
+  content: "\e018";
 }

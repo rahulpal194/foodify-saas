@@ -11,7 +11,7 @@
     <script defer src="../js/script.js"></script>
     <script defer src="../lib/swiper/swiper-bundle.min.js"></script>
     <script defer src="../lib/swiper/initialize.js"></script>
-    <title>Login</title>
+    <title>Register Restaurant</title>
 </head>
 <body>
     <!--==============================
@@ -42,11 +42,11 @@
     ===============================-->
 
     <!--==============================
-             LOGIN PART START       
+           REGISTER PART START       
     ===============================-->
     <section class="container mt-40 md:mt-44 mb-20">
         <div class="p-6 lg:p-3 rounded-3xl shadow-form max-w-[900px] w-full mx-auto">
-            <div class="grid lg:grid-cols-2 items-center">
+            <div class="grid lg:grid-cols-2">
                 <div class="relative max-w-[370px] w-full h-full rounded-2xl">
                     <img class="lg:block hidden w-full h-full rounded-2xl" src="../images/form.png" alt="">
                     <div class="absolute bottom-0 p-6 text-white">
@@ -55,33 +55,30 @@
                     </div>
                 </div>
                 <form class="lg:mr-[60px]">
-                    <h3 class="text-[22px] font-bold mb-6">Login to Your Account</h3>
+                    <h3 class="text-[22px] font-bold mb-6">Create Your Restaurant</h3>
                     <div class="mb-4">
-                        <label class="text-xs capitalize mb-1 font-normal">Your Email</label>
+                        <label class="text-xs capitalize mb-1 font-normal">Restaurant Name</label>
+                        <input type="text" class="w-full h-12 rounded-lg border px-4 border-[#D9DBE9]">
+                    </div>
+                    <div class="mb-4">
+                        <label class="text-xs capitalize mb-1 font-normal">Restaurant Email</label>
                         <input type="email" class="w-full h-12 rounded-lg border px-4 border-[#D9DBE9]">
                     </div>
                     <div class="mb-4">
-                        <label class="text-xs capitalize mb-1 font-normal">Password</label>
+                        <label class="text-xs capitalize mb-1 font-normal">Restaurant Phone</label>
                         <input type="text" class="w-full h-12 rounded-lg border px-4 border-[#D9DBE9]">
                     </div>
-                    <div class="mb-4 flex justify-between">
-                        <div>
-                            <input type="checkbox" id="remember">
-                            <label class="text-sm font-medium" for="remember">Remember me</label>
-                        </div>
-                        <a href="" class="text-sm font-semibold text-primary">Forgot Password?</a>
+                    <div class="mb-6">
+                        <label class="text-xs capitalize mb-1 font-normal">Restaurant Logo</label>
+                        <input type="file" class="w-full h-12 rounded-lg border border-[#D9DBE9]">
                     </div>
-                    <button type="submit" class="w-full h-12 rounded-full text-lg font-bold text-white bg-gradient-to-r from-primary to-secondary mb-4">Login</button>
-                    <div class="flex items-center justify-center gap-2 mb-4 ">
-                        <span class="leading-tight text-base">Are you new here?</span>
-                        <a href="./signup.html" class="text-base leading-tight font-bold text-primary">Register</a>
-                    </div>
+                    <button type="submit" class="w-full h-12 rounded-full text-lg font-bold text-white bg-gradient-to-r from-primary to-secondary mb-4">Register Restaurant</button>
                 </form>
             </div>
         </div>
     </section>
     <!--==============================
-             LOGIN PART END       
+           REGISTER PART END       
     ===============================-->
 
     <!--==============================

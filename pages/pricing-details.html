@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fonts/typography/plus-jakarta-sans.css">
+    <link rel="stylesheet" href="../fonts/iconly/iconly.css">
+    <link rel="stylesheet" href="../lib/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script defer src="../js/script.js"></script>
+    <script defer src="../lib/swiper/swiper-bundle.min.js"></script>
+    <script defer src="../lib/swiper/initialize.js"></script>
+    <title>Pricing Details</title>
+</head>
+<body>
+    <!--==============================
+            HEADER PART START       
+    ===============================-->
+    <header class="fixed top-8 w-full z-10 header px-4">
+        <div class="container !max-w-[949px] p-3 border border-[#FFE5DC] bg-[#ffffff80] backdrop-blur-[125px] rounded-full transition-all duration-500 ">
+            <nav class="flex justify-between items-center">
+                <a class="ms-3" href="#">
+                    <img class="w-auto h-9" src="../images/logo.png" alt="">
+                </a>
+                <div class="dropdown-group relative">
+                    <button class="dropdown-btn lg:hidden block w-12 h-12 rounded-full bg-primary"><i class="icon-category text-2xl text-white"></i> </button>
+                    <ul class="dropdown-list lg:static absolute right-0 top-20 bg-white lg:bg-transparent lg:w-auto lg:shadow-none shadow-lg w-[230px] hidden lg:flex lg:flex-row flex-col gap-2 items-center text-base font-medium">
+                        <li class="hover:text-primary px-4 py-3 active"><a href="">Home</a></li>
+                        <li class="hover:text-primary px-4 py-3"><a href="">Pricing</a></li>
+                        <li class="hover:text-primary px-4 py-3"><a href="">Blogs</a></li>
+                        <li class="hover:text-primary px-4 py-3"><a href="">About</a></li>
+                        <li class="hover:text-primary px-4 py-3"><a href="">Contact Us</a></li>
+                    </ul> 
+                </div>
+                <button class="hidden lg:block px-5 h-12 bg-gradient-to-r from-primary to-secondary rounded-full font-bold text-base text-white shadow-gradient">Start Free Trial</button>
+            </nav>
+        </div>
+    </header>
+    <!--==============================
+            HEADER PART END       
+    ===============================-->
+
+    <!--==============================
+           PRICING PART START      
+    ===============================-->
+    <section class="container mt-40 md:mt-44 mb-20">
+        <h2 class="text-3xl md:text-[40px]/12.5 font-bold max-w-[716px] w-full mx-auto text-center mb-3">Pick a Plan That’s<span class="text-primary"> Right for You</span></h2>
+        <p class="text-lg text-paragraph text-center max-w-[716px] w-full mx-auto mb-8">So we’re saving you the hassle of hundreds of thousands of dollars and doing it all fast. But don’t worry, we’re not overcharging you.</p>
+        <div class="flex flex-wrap justify-center items-center gap-4 mb-12">
+            <h3 class="text-[22px] font-semibold text-[#007FE3]">Monthly</h3>
+            <label class="cursor-pointer">
+                <div class="relative">
+                    <input type="checkbox" id="toggle" name="" class="peer sr-only">
+                    <div class="w-[60px] h-8 rounded-full bg-primary"></div>
+                    <div class="w-6 h-6 rounded-full bg-white absolute left-1 top-1 peer-checked:left-2 peer-checked:translate-x-full duration-150 transition-all"></div>
+                </div>
+            </label>
+            <h3 class="text-[22px] font-semibold text-[#007FE3]">Yearly</h3>
+            <span class="text-sm font-semibold text-primary border border-primary py-1 px-2 rounded-full">20% Off</span>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <div class="p-6 border border-[#EFF0F6] group hover:border-primary bg-white hover:bg-gradient-to-b hover:from-[#FFF5F1] hover:to-white rounded-3xl">
+                <div class="pb-6 mb-6 border-b border-dashed border-paragraph">
+                    <span class="text-[22px] font-bold text-primary mb-2">Basic</span>
+                    <p class="text-sm font-medium text-paragraph">Great For Small Restaurants, Food Vendors, Bar & Lounges</p>
+                </div>
+                <h3 class="text-[40px] font-bold leading-tight mb-6">$19/month</h3>
+                <button class="w-full leading-tight text-lg font-bold py-2.5 rounded-lg text-white group-hover:shadow-grad-btn bg-gradient-to-r from-primary to-secondary mb-8">Choose Plan</button>
+                <ul class="flex flex-col gap-4 list-image-[url('../images/check-mark.png')] pl-6">
+                    <li class="text-base font-medium leading-tight">QR Code for Digital Menu</li>
+                    <li class="text-base font-medium leading-tight">Chat Support</li>
+                    <li class="text-base font-medium leading-tight">50 Menu Items</li>
+                    <li class="text-base font-medium leading-tight">Unlimited Scans</li>
+                    <li class="text-base font-medium leading-tight">Full access to QR Creation Tool</li>
+                    <li class="text-base font-medium leading-tight">Real-time Menu Update</li>
+                </ul>
+            </div>
+            <div class="p-6 border border-[#EFF0F6] group hover:border-primary bg-white hover:bg-gradient-to-b hover:from-[#FFF5F1] hover:to-white rounded-3xl">
+                <div class="pb-6 mb-6 border-b border-dashed border-paragraph">
+                    <span class="text-[22px] font-bold text-primary mb-2">Regular</span>
+                    <p class="text-sm font-medium text-paragraph">Great For Medium Sized Restaurants, Food Vendors, Bar & Lounges</p>
+                </div>
+                <h3 class="text-[40px] font-bold leading-tight mb-6">$35/month</h3>
+                <button class="w-full leading-tight text-lg font-bold py-2.5 rounded-lg text-white group-hover:shadow-grad-btn bg-gradient-to-r from-primary to-secondary mb-8">Choose Plan</button>
+                <ul class="flex flex-col gap-4 list-image-[url('../images/check-mark.png')] pl-6">
+                    <li class="text-base font-medium leading-tight">Everything on Basic Plan</li>
+                    <li class="text-base font-medium leading-tight">Dedicated Support</li>
+                    <li class="text-base font-medium leading-tight">100 Menu Items</li>
+                    <li class="text-base font-medium leading-tight">Integrate with POS</li>
+                    <li class="text-base font-medium leading-tight">PWA Compatible</li>
+                    <li class="text-base font-medium leading-tight">Sales Reports</li>
+                </ul>
+            </div>
+            <div class="p-6 border border-[#EFF0F6] group hover:border-primary bg-white hover:bg-gradient-to-b hover:from-[#FFF5F1] hover:to-white rounded-3xl">
+                <div class="pb-6 mb-6 border-b border-dashed border-paragraph">
+                    <span class="text-[22px] font-bold text-primary mb-2">Premium</span>
+                    <p class="text-sm font-medium text-paragraph">Great For Large Sized Restaurants, Food Vendors, Bar & Lounges</p>
+                </div>
+                <h3 class="text-[40px] font-bold leading-tight mb-6">$49/month</h3>
+                <button class="w-full leading-tight text-lg font-bold py-2.5 rounded-lg text-white group-hover:shadow-grad-btn bg-gradient-to-r from-primary to-secondary mb-8 ">Choose Plan</button>
+                <ul class="flex flex-col gap-4 list-image-[url('../images/check-mark.png')] pl-6">
+                    <li class="text-base font-medium leading-tight">Everything on Regular Plan</li>
+                    <li class="text-base font-medium leading-tight">Dedicated Support</li>
+                    <li class="text-base font-medium leading-tight">Unlimited Menu Items</li>
+                    <li class="text-base font-medium leading-tight">Staff Management</li>
+                    <li class="text-base font-medium leading-tight">Accept Payments Online</li>
+                    <li class="text-base font-medium leading-tight">Customer & Menu Reports</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+           PRICING PART END     
+    ===============================-->
+
+    <!--==============================
+       PRICING COMPARISON PART START      
+    ===============================-->
+    <section class="container mb-20">
+        <h2 class="text-3xl md:text-[40px]/12.5 font-bold max-w-[716px] w-full mx-auto text-center mb-16"><span class="text-primary">Feature Comparison </span>of Pricing Packages</h2>
+        <div class="db-table-responsive">
+            <table class="db-table">
+                <thead class="db-table-head">
+                    <tr class="db-table-head-tr">
+                        <th class="db-table-head-th">Feature List</th>
+                        <th class="db-table-head-th">
+                            <h2 class="text-[22px] font-bold text-primary mb-4">Basic</h2>
+                            <div class="mb-4">
+                                <div class="text-[22px] font-bold">$19<small class="text-base font-normal">/month</small></div>
+                            </div>
+                            <button type="button" class="h-11 lg:px-0 px-4 flex items-center justify-center w-full rounded-lg cursor-pointer bg-linear-to-br from-primary to-secondary">
+                                <span class="text-lg font-bold text-white text-nowrap leading-5">Choose Plan</span>
+                            </button>
+                        </th>
+                        <th class="db-table-head-th">
+                            <h2 class="text-[22px] font-bold text-primary mb-4">Regular</h2>
+                            <div class="mb-4">
+                                <div class="text-[22px] font-bold">$35<small class="text-base font-normal">/month</small></div>
+                            </div>
+                            <button type="button"
+                                    class="h-11 lg:px-0 px-4 flex items-center justify-center w-full rounded-lg cursor-pointer bg-linear-to-br from-primary to-secondary">
+                                    <span class="text-lg font-bold text-white text-nowrap leading-5">Choose Plan</span>
+                            </button>
+                        </th>
+                        <th class="db-table-head-th">
+                            <h2 class="text-[22px] font-bold text-primary mb-4">Premium</h2>
+                            <div class="mb-4">
+                                <div class="text-[22px] font-bold">$49<small class="text-base font-normal">/month</small></div>
+                            </div>
+                            <button type="button"
+                                    class="h-11 lg:px-0 px-4 flex items-center justify-center w-full rounded-lg cursor-pointer bg-linear-to-br from-primary to-secondary">
+                                    <span class="text-lg font-bold text-white text-nowrap leading-5">Choose Plan</span>
+                            </button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="db-table-body">
+                    <tr class="db-table-body-tr">
+                        <td class="db-table-body-td font-medium">Digital menu</td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                    </tr>
+                    <tr class="db-table-body-tr">
+                        <td class="db-table-body-td font-medium">Store profile and business listing</td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                    </tr>
+                    <tr class="db-table-body-tr">
+                        <td class="db-table-body-td font-medium">Custom branding and theming</td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                    </tr>
+                    <tr class="db-table-body-tr">
+                        <td class="db-table-body-td font-medium">Customisable store URL</td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                    </tr>
+                    <tr class="db-table-body-tr">
+                        <td class="db-table-body-td font-medium">Product modifiers and customisations</td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                    </tr>
+                    <tr class="db-table-body-tr">
+                        <td class="db-table-body-td font-medium">Menu categories and groups</td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                    </tr>
+                    <tr class="db-table-body-tr">
+                        <td class="db-table-body-td font-medium">QR code table ordering</td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                    </tr>
+                    <tr class="db-table-body-tr">
+                        <td class="db-table-body-td font-medium">Pick-up and delivery ordering</td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                    </tr>
+                    <tr class="db-table-body-tr">
+                        <td class="db-table-body-td font-medium">Order limiting for busy service periods</td>
+                        <td class="db-table-body-td">
+                            <i class="icon-minus-circle text-[#D9DBE9]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                    </tr>
+                    <tr class="db-table-body-tr">
+                        <td class="db-table-body-td font-medium">Guest checkout</td>
+                        <td class="db-table-body-td">
+                            <i class="icon-minus-circle text-[#D9DBE9]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                    </tr>
+                    <tr class="db-table-body-tr">
+                        <td class="db-table-body-td font-medium">Full control of service and order fees</td>
+                        <td class="db-table-body-td">
+                            <i class="icon-minus-circle text-[#D9DBE9]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                    </tr>
+                    <tr class="db-table-body-tr">
+                        <td class="db-table-body-td font-medium">Automated stock inventory controls</td>
+                        <td class="db-table-body-td">
+                            <i class="icon-minus-circle text-[#D9DBE9]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                    </tr>
+                    <tr class="db-table-body-tr">
+                        <td class="db-table-body-td font-medium">Sales and business performance insights</td>
+                        <td class="db-table-body-td">
+                            <i class="icon-minus-circle text-[#D9DBE9]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-minus-circle text-[#D9DBE9]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                    </tr>
+                    <tr class="db-table-body-tr">
+                        <td class="db-table-body-td font-medium">Facebook Pixel</td>
+                        <td class="db-table-body-td">
+                            <i class="icon-minus-circle text-[#D9DBE9]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-minus-circle text-[#D9DBE9]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                    </tr>
+                    <tr class="db-table-body-tr">
+                        <td class="db-table-body-td font-medium">Customer marketing database</td>
+                        <td class="db-table-body-td">
+                            <i class="icon-minus-circle text-[#D9DBE9]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-minus-circle text-[#D9DBE9]"></i>
+                        </td>
+                        <td class="db-table-body-td">
+                            <i class="icon-check-circle text-[#1AB759]"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!--==============================
+        PRICING COMPARISON PART END  
+    ===============================-->
+
+    <!--==============================
+            FOOTER PART START       
+    ===============================-->
+        <section class="border-t-8 border-primary rounded-t-2xl">
+            <div class="container">
+                <div class="flex md:flex-row flex-col gap-6 justify-between items-center py-12 border-b border-[#D9DBE9] mb-8">
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-center">Ready to Power Your Restaurant with Foodify?</h2>
+                        <p class="text-base font-normal leading-tight text-center">Join restaurants already growing with Foodify. Get started in minutes.
+                        </p>
+                    </div>
+                    <button class="px-5 h-12 bg-gradient-to-r from-primary to-secondary rounded-full font-bold text-base text-white shadow-gradient">Start Free Trial</button>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-y-12 mb-20">
+                    <div class="flex flex-col justify-between gap-5">
+                        <div>
+                            <img class="h-9 mb-4" src="../images/logo.png" alt="">
+                            <span class="text-sm">© Copyright 2024 FoodScan</span>
+                        </div>
+                        <div>
+                            <span class="text-sm font-medium">Follow us on</span>
+                        </div>
+                    </div>
+                    <ul class="flex flex-col lg:mx-auto gap-5">
+                        <li class="leading-tight text-base"><a href="#">Features</a></li>
+                        <li class="leading-tight text-base"><a href="#">How it works</a></li>
+                        <li class="leading-tight text-base"><a href="#">FAQ’s</a></li>
+                        <li class="leading-tight text-base"><a href="#">Pricing</a></li>
+                        <li class="leading-tight text-base"><a href="#">Blogs</a></li>
+                    </ul>
+                    <ul class="flex flex-col gap-5">
+                        <li class="leading-tight text-base"><a href="#">About us</a></li>
+                        <li class="leading-tight text-base"><a href="#">Contact us</a></li>
+                        <li class="leading-tight text-base"><a href="#">Terms & condition</a></li>
+                        <li class="leading-tight text-base"><a href="#">Privacy policy</a></li>
+                    </ul>
+                    <div>
+                    <ul class="flex flex-col gap-5">
+                        <li class="flex items-start gap-3"> <i class="icon-line-location text-2xl"></i> <span>Avenue-1, Road:1, House:18 Mirpur-2, Dhaka</span></li>
+                        <li class="flex items-start gap-3"> <i class="icon-call-calling text-2xl"></i> <span>01365489654</span></li>
+                        <li class="flex items-start gap-3"> <i class="icon-line-email text-2xl"></i> <span>Support@foodscan.com</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    <!--==============================
+            FOOTER PART END       
+    ===============================-->
+
+</body>
+</html>    

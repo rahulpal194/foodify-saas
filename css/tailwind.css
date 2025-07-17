@@ -14,8 +14,21 @@
     body {@apply font-plus}
     button{ @apply cursor-pointer}
     input{@apply outline-none}
+    input[type=file] { @apply relative font-medium pl-0 text-sm cursor-pointer}
+    input[type=file]::-webkit-file-upload-button {@apply text-center h-12  px-6 mr-6 border-r border-[#D9DBE9] cursor-pointer}
+
     .dropdown-group {@apply relative}
     .swiper-slide{@apply !w-fit}
+
+    .db-table-responsive {@apply w-full overflow-auto border border-[#EFF0F6] rounded-3xl}
+    .db-table {@apply table-auto w-full text-left whitespace-nowrap}
+    .db-table.stripe .db-table-body-tr {@apply odd:!bg-[#f9fafb]}
+    .db-table-head {@apply ltr:text-left rtl:text-right border-b border-gray-200}
+    .db-table-body {@apply ltr:text-left rtl:text-right}
+    .db-table-head-th {@apply p-6 pb-8 first:text-start first:align-bottom text-center leading-tight tracking-[1px] font-bold text-[26px]}
+    .db-table-body-tr {@apply border-b border-gray-200 last:border-none}
+    .db-table-body-td {@apply px-6 py-6 text-base font-medium}
+    .db-table-body-td i {@apply !block text-center text-2xl}
 }
 @layer utilities{
     .container{ @apply max-w-[1118px] w-full mx-auto px-4}
