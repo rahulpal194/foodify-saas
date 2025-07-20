@@ -9,14 +9,14 @@
     --shadow-card : 0px 6px 48px 0px rgba(87, 89, 102, 0.04);
     --shadow-form : 0px 8px 40px 0px rgba(23, 31, 70, 0.08);
     --shadow-grad-btn : 0px 8px 16px 0px rgba(255, 105, 31, 0.32);
+    --shadow-dropdown : 0px 4px 40px 0px rgba(23, 31, 70, 0.16);
 }
 @layer base{
     body {@apply font-plus}
     button{ @apply cursor-pointer}
     input{@apply outline-none}
     input[type=file] { @apply relative font-medium pl-0 text-sm cursor-pointer}
-    input[type=file]::-webkit-file-upload-button {@apply text-center h-12  px-6 mr-6 border-r border-[#D9DBE9] cursor-pointer}
-
+    input[type=file]::-webkit-file-upload-button {@apply text-center h-12  px-6 mr-6 border-r border-[#D9DBE9] cursor-pointer text-paragraph}
     .dropdown-group {@apply relative}
     .swiper-slide{@apply !w-fit}
 

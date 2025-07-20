@@ -1,11 +1,11 @@
 window.addEventListener('scroll', function(){
-    const headernav = document.querySelector('.header').firstElementChild
+    const headernav = document.querySelector('.header-content')
     if(window.pageYOffset >= 100){
-        headernav?.classList.add('!max-w-[1118px]')
+        headernav?.classList.add('!max-w-[1086px]')
         headernav?.classList.remove('!max-w-[949px]')
     }
     else{
-        headernav?.classList.remove('!max-w-[1118px]')
+        headernav?.classList.remove('!max-w-[1086px]')
         headernav?.classList.add('!max-w-[949px]')
     }
 })
@@ -32,18 +32,21 @@ accordionBtn.forEach((btn) => {
             const otherIcon = otherBtn.querySelector('.accordion-icon');
             if (otherBtn !== btn) {
                 otherContent.style.height = '0px';
-                otherIcon.classList.remove('rotate-180');
+                otherIcon.classList.remove('icon-minus-circle');
+                otherIcon.classList.add('icon-add-circle');
                 otherContent.classList.remove('mt-6');
                 otherBtn.setAttribute('aria-expanded', 'false');
             }
         });
         if (expanded) {
             content.style.height = '0px';
-            icon.classList.remove('rotate-180');
+            icon.classList.remove('icon-minus-circle');
+            icon.classList.add('icon-add-circle');
             content.classList.remove('mt-6');
         } else {
             content.style.height = `${content.scrollHeight}px`;
-            icon.classList.add('rotate-180');
+            icon.classList.add('icon-minus-circle');
+            icon.classList.remove('icon-add-circle');
             content.classList.add('mt-6');
         }
         btn.setAttribute('aria-expanded', !expanded);

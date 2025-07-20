@@ -17,23 +17,27 @@
     <!--==============================
             HEADER PART START       
     ===============================-->
-    <header class="fixed top-8 w-full z-10 header px-4">
-        <div class="container !max-w-[949px] p-3 border border-[#FFE5DC] bg-[#ffffff80] backdrop-blur-[125px] rounded-full transition-all duration-500 ">
+    <header class="fixed top-5 lg:top-8 w-full z-10 header px-4">
+        <span class="bg-primary h-54 w-8 absolute -rotate-45 -top-24 left-12 blur-[72px]"></span>
+        <span class="bg-primary h-54 w-8 absolute rotate-45 -top-24 right-12 blur-[72px]"></span>
+        <div class="container !max-w-[949px] p-3 border border-[#FFE5DC] bg-[#ffffff]/80 backdrop-blur-[125px] rounded-full transition-all duration-500 header-content">
             <nav class="flex justify-between items-center">
                 <a class="ms-3" href="#">
                     <img class="w-auto h-9" src="../images/logo.png" alt="">
                 </a>
                 <div class="dropdown-group relative">
                     <button class="dropdown-btn lg:hidden block w-12 h-12 rounded-full bg-primary"><i class="icon-category text-2xl text-white"></i> </button>
-                    <ul class="dropdown-list lg:static absolute right-0 top-20 bg-white lg:bg-transparent lg:w-auto lg:shadow-none shadow-lg w-[230px] hidden lg:flex lg:flex-row flex-col gap-2 items-center text-base font-medium">
-                        <li class="hover:text-primary px-4 py-3 active"><a href="">Home</a></li>
-                        <li class="hover:text-primary px-4 py-3"><a href="">Pricing</a></li>
-                        <li class="hover:text-primary px-4 py-3"><a href="">Blogs</a></li>
-                        <li class="hover:text-primary px-4 py-3"><a href="">About</a></li>
-                        <li class="hover:text-primary px-4 py-3"><a href="">Contact Us</a></li>
+                    <ul class="dropdown-list lg:static absolute right-0 top-15 lg:backdrop-blur-none backdrop-blur-[10px] bg-white lg:bg-transparent lg:w-auto lg:shadow-none shadow-dropdown     lg:rounded-none rounded-3xl w-[302px] hidden p-6 lg:p-0 lg:flex lg:flex-row flex-col gap-2 items-center text-base font-medium">
+                        <li class="hover:text-primary px-6 lg:px-4 py-3"><a href="">Home</a></li>
+                        <li class="hover:text-primary px-6 lg:px-4 py-3"><a href="">Pricing</a></li>
+                        <li class="hover:text-primary px-6 lg:px-4 py-3"><a href="">Blogs</a></li>
+                        <li class="hover:text-primary px-6 lg:px-4 py-3"><a href="">About</a></li>
+                        <li class="hover:text-primary px-6 lg:px-4 py-3"><a href="">Contact Us</a></li>
+                        <div class="lg:hidden block w-full h-[1px] bg-[#D9DBE9] mt-3 mb-6"></div>
+                        <button class="block lg:hidden w-full px-5 h-12 bg-gradient-to-r from-primary to-secondary rounded-full font-bold text-base text-white shadow-gradient">Start Free Trial</button>
                     </ul> 
                 </div>
-                <button class="hidden lg:block px-5 h-12 bg-gradient-to-r from-primary to-secondary rounded-full font-bold text-base text-white shadow-gradient">Start Free Trial</button>
+                <button class="lg:block hidden px-5 h-12 bg-gradient-to-r from-primary to-secondary rounded-full font-bold text-base text-white shadow-gradient">Start Free Trial</button>
             </nav>
         </div>
     </header>
@@ -44,11 +48,11 @@
     <!--==============================
            SIGNUP PART START       
     ===============================-->
-    <section class="container mt-40 md:mt-44 mb-20">
+    <section class="container mt-34 md:mt-44 mb-20">
         <div class="p-6 lg:p-3 rounded-3xl shadow-form max-w-[900px] w-full mx-auto">
-            <div class="grid lg:grid-cols-2">
+            <div class="grid lg:grid-cols-2 items-center">
                 <div class="relative max-w-[370px] w-full h-full rounded-2xl">
-                    <img class="lg:block hidden w-full h-full rounded-2xl" src="../images/form.png" alt="">
+                    <img class="lg:block hidden w-full h-[512px] rounded-2xl" src="../images/form.png" alt="">
                     <div class="absolute bottom-0 p-6 text-white">
                         <h5 class="text-[22px] font-bold mb-3">The smart way to manage your restaurant’s operations.</h5>
                         <p class="text-sm font-normal">Offer contactless ordering and payment options for a safer & more convenient dining experience.</p>
@@ -73,7 +77,7 @@
                         <input type="text" class="w-full h-12 rounded-lg border px-4 border-[#D9DBE9]">
                     </div>
                     <button type="submit" class="w-full h-12 rounded-full text-lg font-bold text-white bg-gradient-to-r from-primary to-secondary mb-4">Next</button>
-                    <div class="flex items-center justify-center gap-2 mb-4 ">
+                    <div class="flex items-center justify-center gap-2">
                         <span class="leading-tight text-base">Already registered?</span>
                         <a href="./login.html" class="text-base leading-tight font-bold text-primary">Login</a>
                     </div>
