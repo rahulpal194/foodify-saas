@@ -20,7 +20,26 @@ droodownbtn.forEach(btn=>{
     })
 })
 
+// Modal Functionality
+const modaldivs = document.querySelectorAll('.modal')
+const modalsets = document.querySelectorAll("[data-modal]")
+const closemodal = document.querySelectorAll(".modal-close")
 
+modalsets.forEach((modalset)=>
+    modalset.addEventListener('click', function (){
+        const target = document.querySelector(modalset.dataset.modal)
+        target.classList.add('active')
+    })
+)
+closemodal.forEach((btn)=>
+    btn.addEventListener('click', function (){
+        modaldivs.forEach((modal)=>{
+            modal.classList.remove('active')
+        })
+    })
+)
+
+// Accordion Functionality
 const accordionBtn = document.querySelectorAll('.accordionBtn');
 accordionBtn.forEach((btn) => {
     btn.addEventListener('click', function(event) {

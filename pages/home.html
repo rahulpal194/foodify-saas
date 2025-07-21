@@ -14,6 +14,7 @@
     <title>Home</title>
 </head>
 <body>
+
     <!--==============================
             HEADER PART START       
     ===============================-->
@@ -26,10 +27,10 @@
                     <img class="w-auto h-9" src="../images/logo.png" alt="">
                 </a>
                 <div class="dropdown-group relative">
-                    <button class="dropdown-btn lg:hidden block w-12 h-12 rounded-full bg-primary"><i class="icon-category text-2xl text-white"></i> </button>
+                    <button class="dropdown-btn lg:hidden block w-12 h-12 rounded-full bg-primary shadow-gradient"><i class="icon-category text-2xl text-white"></i> </button>
                     <ul class="dropdown-list lg:static absolute right-0 top-15 lg:backdrop-blur-none backdrop-blur-[10px] bg-white lg:bg-transparent lg:w-auto lg:shadow-none shadow-dropdown     lg:rounded-none rounded-3xl w-[302px] hidden p-6 lg:p-0 lg:flex lg:flex-row flex-col gap-2 items-center text-base font-medium">
                         <li class="hover:text-primary px-6 lg:px-4 py-3"><a href="">Home</a></li>
-                        <li class="hover:text-primary px-6 lg:px-4 py-3"><a href="">Pricing</a></li>
+                        <li class="hover:text-primary px-6 lg:px-4 py-3 active-btn"><a href="">Pricing</a></li>
                         <li class="hover:text-primary px-6 lg:px-4 py-3"><a href="">Blogs</a></li>
                         <li class="hover:text-primary px-6 lg:px-4 py-3"><a href="">About</a></li>
                         <li class="hover:text-primary px-6 lg:px-4 py-3"><a href="">Contact Us</a></li>
@@ -56,11 +57,16 @@
             <p class="text-base md:text-lg font-normal text-center !max-w-[580px] w-full mx-auto mb-8 container">All-in-one SaaS platform for food businesses—POS, online ordering, kitchen display, takeaway, and more. No hassles. Start in minutes.</p>
             <div class="flex gap-6 flex-wrap justify-center pb-12">
                 <button class="px-5 h-14 bg-gradient-to-r from-primary to-secondary rounded-full font-bold text-base text-white shadow-gradient">Start Your Journey</button>
-                <button class="ps-3 pr-5 h-14 bg-[#FFF4F0] rounded-full font-bold text-base text-primary flex gap-2 items-center justify-start">
+                <button data-modal="#primary" class="ltr:pl-3 rtl:pr-3 ltr:pr-5 rtl:pl-5 h-14 bg-[#FFF4F0] rounded-full font-bold text-base text-primary flex gap-2 items-center justify-start">
                     <i class="icon-play w-8 h-8 text-white before:h-full rounded-full bg-[#FF8B62] before:flex before:justify-center before:items-center"></i> Watch Video</button>
             </div>
         </div>
-        <img class="!max-w-[715px] w-full mx-auto container" src="../images/Sub Container.png" alt="">
+        <div data-modal="#video" class="!max-w-[715px] w-full mx-auto rounded-3xl relative container">
+            <img class="w-full h-full rounded-3xl aspect-video" src="../images/Sub Container.png" alt="">
+            <button data-modal="#primary" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/60 backdrop-blur-md w-16 md:w-20 h-16 md:h-20 rounded-full flex items-center justify-center">
+                <i class="icon-play text-3xl md:text-4xl text-primary"></i>
+            </button>
+        </div>
     </section>
     <!--==============================
             HERO PART END       
@@ -267,7 +273,7 @@
     ===============================-->
 
     <!--==============================
-            3 STEPS PART START       
+        THREE STEPS PART START       
     ===============================-->
     <section class="container mb-20">
         <div class="bg-[url('../images/bg.png')] bg-cover bg-no-repeat rounded-3xl p-12">
@@ -303,7 +309,7 @@
         </div>
     </section>
     <!--==============================
-             3 STEPS PART END       
+         THREE STEPS PART END       
     ===============================-->
 
     <!--==============================
@@ -416,7 +422,7 @@
                 </div>
                 <h3 class="text-[40px] font-bold leading-tight mb-6">$19/month</h3>
                 <button class="w-full leading-tight text-lg font-bold py-2.5 rounded-lg text-white group-hover:shadow-grad-btn bg-gradient-to-r from-primary to-secondary mb-8">Choose Plan</button>
-                <ul class="flex flex-col gap-4 list-image-[url('../images/check-mark.png')] pl-6">
+                <ul class="flex flex-col gap-4 list-image-[url('../images/check-mark.png')] ltr:pl-6 rtl:pr-6">
                     <li class="text-base font-medium leading-tight">QR Code for Digital Menu</li>
                     <li class="text-base font-medium leading-tight">Chat Support</li>
                     <li class="text-base font-medium leading-tight">50 Menu Items</li>
@@ -432,7 +438,7 @@
                 </div>
                 <h3 class="text-[40px] font-bold leading-tight mb-6">$35/month</h3>
                 <button class="w-full leading-tight text-lg font-bold py-2.5 rounded-lg text-white group-hover:shadow-grad-btn bg-gradient-to-r from-primary to-secondary mb-8">Choose Plan</button>
-                <ul class="flex flex-col gap-4 list-image-[url('../images/check-mark.png')] pl-6">
+                <ul class="flex flex-col gap-4 list-image-[url('../images/check-mark.png')] ltr:pl-6 rtl:pr-6">
                     <li class="text-base font-medium leading-tight">Everything on Basic Plan</li>
                     <li class="text-base font-medium leading-tight">Dedicated Support</li>
                     <li class="text-base font-medium leading-tight">100 Menu Items</li>
@@ -448,7 +454,7 @@
                 </div>
                 <h3 class="text-[40px] font-bold leading-tight mb-6">$49/month</h3>
                 <button class="w-full leading-tight text-lg font-bold py-2.5 rounded-lg text-white group-hover:shadow-grad-btn bg-gradient-to-r from-primary to-secondary mb-8 ">Choose Plan</button>
-                <ul class="flex flex-col gap-4 list-image-[url('../images/check-mark.png')] pl-6">
+                <ul class="flex flex-col gap-4 list-image-[url('../images/check-mark.png')] ltr:pl-6 rtl:pr-6">
                     <li class="text-base font-medium leading-tight">Everything on Regular Plan</li>
                     <li class="text-base font-medium leading-tight">Dedicated Support</li>
                     <li class="text-base font-medium leading-tight">Unlimited Menu Items</li>
@@ -469,12 +475,10 @@
     <!--==============================
         CLIENTS REVIEW PART START     
     ===============================-->
-        <section class="mb-20">
-            <div class="container">
-                <h2 class="text-3xl md:text-[40px]/12.5 font-bold text-center mb-12 md:mb-16">What Our Clients are Saying</h2>
-            </div>
-            <div class="swiper reviewSwiper">
-                <div class="swiper-wrapper">
+        <section class="container"> 
+             <h2 class="text-3xl md:text-[40px]/12.5 font-bold text-center mb-12 md:mb-16">What Our Clients are Saying</h2>
+            <div dir="ltr" class="swiper reviewSwiper">
+                <div class="swiper-wrapper pb-20">
                     <div class="swiper-slide">
                         <div class="max-w-[346px] w-full">
                             <div class="p-6 pt-8 shadow-card rounded-2xl">
@@ -743,5 +747,19 @@
     <!--==============================
             FOOTER PART END       
     ===============================-->
+
+    <!--==============================
+         VIDEO MODAL PART START       
+    ===============================-->
+    <div id="video" class="modal">
+        <div class="modal-content">
+            <button class="modal-close"><i class="icon-close-circle"></i></button>
+            <iframe class="w-full h-full rounded-2xl" src="https://www.youtube.com/embed/Qw3l4MgmMjs?si=KW0ZWfv0efI2vzXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!--==============================
+          VIDEO MODAL PART END       
+    ===============================-->
+
 </body>
 </html>

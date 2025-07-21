@@ -26,7 +26,7 @@
                     <img class="w-auto h-9" src="../images/logo.png" alt="">
                 </a>
                 <div class="dropdown-group relative">
-                    <button class="dropdown-btn lg:hidden block w-12 h-12 rounded-full bg-primary"><i class="icon-category text-2xl text-white"></i> </button>
+                    <button class="dropdown-btn lg:hidden block w-12 h-12 rounded-full bg-primary shadow-gradient"><i class="icon-category text-2xl text-white"></i> </button>
                     <ul class="dropdown-list lg:static absolute right-0 top-15 lg:backdrop-blur-none backdrop-blur-[10px] bg-white lg:bg-transparent lg:w-auto lg:shadow-none shadow-dropdown     lg:rounded-none rounded-3xl w-[302px] hidden p-6 lg:p-0 lg:flex lg:flex-row flex-col gap-2 items-center text-base font-medium">
                         <li class="hover:text-primary px-6 lg:px-4 py-3"><a href="">Home</a></li>
                         <li class="hover:text-primary px-6 lg:px-4 py-3"><a href="">Pricing</a></li>
@@ -58,7 +58,7 @@
                         <p class="text-sm font-normal">Offer contactless ordering and payment options for a safer & more convenient dining experience.</p>
                     </div>
                 </div>
-                <form class="lg:mr-[60px]">
+                <form class="lg:ltr:mr-[60px] lg:rtl:ml-[60px]">
                     <h3 class="text-[22px] font-bold mb-6">Login to Your Account</h3>
                     <div class="mb-4">
                         <label class="text-xs capitalize mb-1 font-normal">Your Email</label>
@@ -69,8 +69,8 @@
                         <input type="text" class="w-full h-12 rounded-lg border px-4 border-[#D9DBE9]">
                     </div>
                     <div class="mb-4 flex justify-between">
-                        <div>
-                            <input type="checkbox" id="remember">
+                        <div class="flex items-center gap-1">
+                            <input class="accent-primary" type="checkbox" id="remember">
                             <label class="text-sm font-medium" for="remember">Remember me</label>
                         </div>
                         <a href="" class="text-sm font-semibold text-primary">Forgot Password?</a>

@@ -15,8 +15,9 @@
     body {@apply font-plus}
     button{ @apply cursor-pointer}
     input{@apply outline-none}
-    input[type=file] { @apply relative font-medium pl-0 text-sm cursor-pointer}
-    input[type=file]::-webkit-file-upload-button {@apply text-center h-12  px-6 mr-6 border-r border-[#D9DBE9] cursor-pointer text-paragraph}
+    input[type=file] {@apply relative font-medium ltr:pl-0 rtl:pr-0 text-sm cursor-pointer}
+    input[type=file]::-webkit-file-upload-button {@apply text-center h-12 px-6 mr-6 border-r border-[#D9DBE9] cursor-pointer text-paragraph}
+
     .dropdown-group {@apply relative}
     .swiper-slide{@apply !w-fit}
 
@@ -29,15 +30,21 @@
     .db-table-body-tr {@apply border-b border-gray-200 last:border-none}
     .db-table-body-td {@apply px-6 py-6 text-base font-medium}
     .db-table-body-td i {@apply !block text-center text-2xl}
+
+    .modal {@apply fixed bg-black/60 inset-0 top-0 ltr:left-0 rtl:right-0 z-99 opacity-0 invisible flex justify-center transition-all duration-500}
+    .modal-content {@apply max-w-2xl w-full mx-auto h-96 aspect-video rounded-2xl px-8 relative mt-10 scale-0 transition-all duration-500}
+    .modal-close {@apply text-red-700 text-2xl absolute -top-3 ltr:right-3 rtl:left-3}
+    .modal.active {@apply opacity-100 visible}
+    .modal.active .modal-content{@apply scale-100}
 }
 @layer utilities{
     .container{ @apply max-w-[1118px] w-full mx-auto px-4}
-
-        /* .active {
-            border-width: 1px;
-            border-radius: 50em;
-            border-style: solid;
-            border-image: linear-gradient(to bottom right, rgba(255, 66, 0, 1), #FF9341) 1;
-            background: rgb(177, 169, 169);
-        } */
+    .active-btn {
+        background:
+            linear-gradient(#FFF4F0, #FFF4F0) padding-box,
+            linear-gradient(to bottom right, rgba(255, 66, 0, 1), #FF9341) border-box;
+        border: 1px solid transparent;
+        border-radius: 50em;
+        color: rgba(255, 66, 0, 1);
+    }
 }
