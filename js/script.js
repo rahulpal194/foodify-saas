@@ -26,7 +26,7 @@ const modalsets = document.querySelectorAll("[data-modal]")
 const closemodal = document.querySelectorAll(".modal-close")
 
 modalsets.forEach((modalset)=>
-    modalset.addEventListener('click', function (){
+    modalset.addEventListener('click', function (e){
         const target = document.querySelector(modalset.dataset.modal)
         target.classList.add('active')
     })
