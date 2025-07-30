@@ -20,14 +20,14 @@
     <header class="fixed top-5 lg:top-8 w-full z-10 header px-4">
         <span class="bg-primary h-54 w-8 absolute -rotate-45 -top-24 left-12 blur-[72px]"></span>
         <span class="bg-primary h-54 w-8 absolute rotate-45 -top-24 right-12 blur-[72px]"></span>
-        <div class="container !max-w-[949px] p-3 border border-[#FFE5DC] bg-[#ffffff]/80 backdrop-blur-[125px] rounded-full transition-all duration-500 header-content">
+        <div class="container !max-w-[949px] p-3 border border-[#FFE5DC] bg-white rounded-full transition-all duration-500 header-content">
             <nav class="flex justify-between items-center">
                 <a class="ms-3" href="#">
                     <img class="w-auto h-9" src="../images/logo.png" alt="">
                 </a>
                 <div class="dropdown-group relative">
-                    <button class="dropdown-btn lg:hidden block w-12 h-12 rounded-full bg-primary shadow-gradient"><i class="icon-category text-2xl text-white"></i> </button>
-                    <ul class="dropdown-list lg:static absolute right-0 top-15 lg:backdrop-blur-none backdrop-blur-[10px] bg-white lg:bg-transparent lg:w-auto lg:shadow-none shadow-dropdown     lg:rounded-none rounded-3xl w-[302px] hidden p-6 lg:p-0 lg:flex lg:flex-row flex-col gap-2 items-center text-base font-medium">
+                    <button class="dropdown-btn lg:hidden block w-12 h-12 rounded-full bg-primary"><i class="icon-category text-2xl text-white"></i> </button>
+                    <ul class="dropdown-list lg:static absolute right-0 top-15 lg:backdrop-blur-none backdrop-blur-[10px] bg-white/80 lg:bg-transparent lg:w-auto lg:shadow-none shadow-dropdown lg:rounded-none rounded-3xl w-[302px] hidden p-6 lg:p-0 lg:flex lg:flex-row flex-col gap-2 items-center text-base font-medium">
                         <li class="hover:text-primary px-6 lg:px-4 py-3"><a href="">Home</a></li>
                         <li class="hover:text-primary px-6 lg:px-4 py-3"><a href="">Pricing</a></li>
                         <li class="hover:text-primary px-6 lg:px-4 py-3"><a href="">Blogs</a></li>
@@ -49,13 +49,13 @@
           CONTACT US PART START       
     ===============================-->
     <section class="container mt-34 md:mt-44 mb-20">
-        <div class="grid grid-cols-12 gap-y-8 md:gap-12 lg:gap-24">
+        <div class="grid grid-cols-12 md:gap-12 lg:gap-24">
             <div class="col-span-12 md:col-span-7 flex flex-col justify-center">
                 <div class="mb-12">
                     <h2 class="text-3xl md:text-[40px]/12.5 font-bold mb-6 text-center md:text-left">Reach Out &<span class="text-primary"> Revolutionize</span> Your Restaurant Business</h2>
-                    <p class="text-base md:text-lg font-normal text-center md:text-left">Have questions or need assistance? Whether you're looking to get started, need technical support, or want to learn more about how Foodify can enhance your restaurant operations, our team is ready to assist you.</p>
+                    <p class="text-base md:text-lg font-normal text-center md:text-left text-[#5B5C6A]">Have questions or need assistance? Whether you're looking to get started, need technical support, or want to learn more about how Foodify can enhance your restaurant operations, our team is ready to assist you.</p>
                 </div>
-                <div class="p-6 bg-gradient-to-b from-[#FFF0EB] to-[#F4F8FF] rounded-3xl">
+                <div class="hidden md:block p-6 bg-gradient-to-b from-[#FFF0EB] to-[#F4F8FF] rounded-3xl">
                     <h6 class="text-2xl font-bold mb-6">Get in Touch!</h6>
                     <p class="text-lg font-medium leading-tight mb-4">Avenue - 1, Block - C, House - 18, Sector - 2, Mirpur, Dhaka, 1216</p>
                     <p class="text-lg font-medium leading-tight mb-4">foodscanhotline@gmail.com</p>
@@ -63,7 +63,7 @@
                 </div>
             </div>
             <div class="col-span-12 md:col-span-5">
-                <div class="p-6 shadow-card rounded-3xl ">
+                <div class="p-6 shadow-card rounded-3xl md:mb-0 mb-16">
                     <form>
                         <h3 class="text-[22px] font-bold mb-6">Send us a message!</h3>
                         <div class="mb-4">
@@ -85,6 +85,12 @@
                         <button type="submit" class="w-full h-12 rounded-full text-lg font-bold text-white bg-gradient-to-r from-primary to-secondary">Send Message</button>
                     </form>
                 </div>
+                <div class="block md:hidden p-6 bg-gradient-to-b from-[#FFF0EB] to-[#F4F8FF] rounded-3xl">
+                    <h6 class="text-2xl font-bold mb-6">Get in Touch!</h6>
+                    <p class="text-lg font-medium leading-tight mb-4">Avenue - 1, Block - C, House - 18, Sector - 2, Mirpur, Dhaka, 1216</p>
+                    <p class="text-lg font-medium leading-tight mb-4">foodscanhotline@gmail.com</p>
+                    <p class="text-lg font-medium leading-tight">01423659874</p>
+                </div>
             </div>
         </div>
     </section>
@@ -96,17 +102,17 @@
            SUPPORT PART START      
     ===============================-->
     <section class="container mb-20">
-        <div class="flex md:flex-row flex-col justify-between items-center gap-8">
+        <div class="flex md:flex-row flex-col justify-between items-center gap-12">
             <div>
                 <img class="w-full h-full" src="../images/vector/support-vector.png" alt="">
             </div>
             <div>
-                <h6 class="text-3xl md:text-[40px]/list12.5 font-bold mb-8">24/7 Real Time Support</h6>
+                <h6 class="text-3xl md:text-[40px]/list12.5 font-bold mb-8">24/7 Real Time <span class="text-primary">Support</span></h6>
                 <ul class="flex flex-col gap-4 mb-8">
-                    <li class="text-lg font-medium leading-tight">Email Support</li>
-                    <li class="text-lg font-medium leading-tight">Live Chat for Unlimited Plan</li>
-                    <li class="text-lg font-medium leading-tight">Frequent Webinars</li>
-                    <li class="text-lg font-medium leading-tight">All-time support for any problem with the website</li>
+                    <li class="text-base sm:text-lg font-medium leading-tight flex items-center gap-3"><i class="icon-check-circle text-xl text-secondary"></i> Email Support</li>
+                    <li class="text-base sm:text-lg font-medium leading-tight flex items-center gap-3"><i class="icon-check-circle text-xl text-secondary"></i> Live Chat for Unlimited Plan</li>
+                    <li class="text-base sm:text-lg font-medium leading-tight flex items-center gap-3"><i class="icon-check-circle text-xl text-secondary"></i> Frequent Webinars</li>
+                    <li class="text-base sm:text-lg font-medium leading-tight flex items-center gap-3"><i class="icon-check-circle text-xl text-secondary"></i> All-time support for any problem with the website</li>
                 </ul>
                 <div class="p-6 shadow-card flex gap-4 items-center rounded-xl">
                     <img src="../images/vector/support.png" alt="">
